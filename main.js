@@ -5,7 +5,7 @@ function saveIssue(e){
     var issueSeverity = document.getElementById('issueSeverityInput').value;
     var issueAssignedTo = document.getElementById('issueAssignedToInput').value;
     var issueId = chance.guid();
-    
+    var issueStatus = 'Open';    
 
 }
 
@@ -19,7 +19,7 @@ function fetchIssues(){
         var id = issues[i].id;
         var desc = issues[i].description;
         var severity = issues[i].severity;
-        var assignedTo = issues[i].assignedTo;
+        var assignedTo = issues[i].assignedTo; 
         var status = issues[i].status;
 
         issuesList.innerHTML += '<div class="well">'+
